@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textActividadVer"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="256dp"
+        android:hint="Actividad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNotaVer"
+        android:layout_width="107dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textActividadVer" />
+
+    <TextView
+        android:id="@+id/txtPorcentajeVer"
+        android:layout_width="79dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="256dp"
+        android:hint="Porcentaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/textActividadVer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNotaCalVer"
+        android:layout_width="107dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nota calculada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toEndOf="@+id/txtNotaVer"
+        app:layout_constraintTop_toBottomOf="@+id/txtPorcentajeVer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

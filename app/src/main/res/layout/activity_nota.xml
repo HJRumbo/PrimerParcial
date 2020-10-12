@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnAddTercero"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotaActivity">
+
+    <TextView
+        android:id="@+id/txtNotaTCorte"
+        android:layout_width="105dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="76dp"
+        android:text="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtNumTCorte"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotaSCorte" />
+
+    <Button
+        android:id="@+id/btnAddTercer"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        android:onClick="onClickAdd"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/txtNotaTCorte"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotaSCorte" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="76dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toEndOf="@+id/btnAddTercer"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotaSCorte" />
+
+    <TextView
+        android:id="@+id/txtNumTCorte"
+        android:layout_width="139dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:text="Tercer corte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumSCorte" />
+
+    <TextView
+        android:id="@+id/txtNotaSCorte"
+        android:layout_width="99dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="68dp"
+        android:text="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtNumSCorte"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotaPCorte" />
+
+    <Button
+        android:id="@+id/btnAddSegundo"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:onClick="onClickAdd"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/txtNotaSCorte"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotaPCorte" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toEndOf="@+id/btnAddSegundo"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotaPCorte" />
+
+    <TextView
+        android:id="@+id/txtNumSCorte"
+        android:layout_width="139dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="72dp"
+        android:text="Segundo corte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumPCorte" />
+
+    <TextView
+        android:id="@+id/textMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Materia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMateria" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:onClick="onClick"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="176dp"
+        android:text="con"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/btnAddPrimer"
+        android:onClick="conPrimer"
+        app:layout_constraintTop_toBottomOf="@+id/textMateria" />
+
+    <TextView
+        android:id="@+id/txtNotaPCorte"
+        android:layout_width="105dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="136dp"
+        android:text="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtNumPCorte"
+        app:layout_constraintTop_toBottomOf="@+id/textCodigo" />
+
+    <TextView
+        android:id="@+id/txtNumPCorte"
+        android:layout_width="139dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="156dp"
+        android:text="Primer corte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textCodigo" />
+
+    <Button
+        android:id="@+id/btnAddPrimer"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="136dp"
+        android:onClick="onClickAdd"
+        android:text="ad"
+        app:layout_constraintStart_toEndOf="@+id/txtNotaPCorte"
+        app:layout_constraintTop_toBottomOf="@+id/textCodigo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
